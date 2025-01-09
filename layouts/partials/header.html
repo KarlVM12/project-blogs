@@ -1,0 +1,34 @@
+<header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      {{ partial "logo.html" . }}
+    </div>
+    <div class="header__title">
+     <!-- <h1>{{ .Site.Title }}</h1>
+      <p>{{ .Site.Params.description }}</p>
+    </div>-->
+    {{ if len $.Site.Menus }}
+      {{ partial "mobile-menu.html" . }}
+    {{ end }}
+    {{ if and $.Site.Params.showLanguageSelector (len $.Site.Home.AllTranslations) }}
+      {{ partial "language-menu.html" . }}
+    {{ end }}
+  </div> 
+</header>
+
+  {{ if len $.Site.Menus }}
+    {{ if not .IsHome }}
+      {{ partial "menu.html" . }}
+    {{ end }}
+  {{ end }}
+  
+  {{ if .IsHome }}
+    <pre>👋 I'm Karl !
+
+👨‍💻 Software &amp; Site Reliability Engineer | 🚀 AI Enthusiast | 🌐 Cloud Developer
+
+🔭 I’m currently working on: <a href="/posts/dpmm/">Dynamic Probability Mapping Model</a>
+🌱 Learning: Server Development with Go
+💬 Ask me about: AI, Unity, or AWS!
+📫 How to reach me: [<a href="https://www.linkedin.com/in/karlvmuller" target="_blank">LinkedIn</a>, <a href="https://github.com/KarlVM12" target="_blank">Github</a>]</pre>
+  {{ end }} 

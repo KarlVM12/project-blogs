@@ -1,0 +1,18 @@
+baseURL = "/"
+languageCode = 'en-us'
+title = "Karl Muller's Projects"
+theme = 'terminal'
+
+[params]
+    readMore = "Read More"
+    description = "Projects by Karl"
+
+   [params.Logo]
+	logoText = "Karl Muller"
+	logoHomeLink = "/"
+
+   [[menu.main]]
+ 	name = "Home"
+ 	url = "/"
+	weight = 1
+
