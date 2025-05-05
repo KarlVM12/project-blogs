@@ -6,6 +6,7 @@ theme = 'terminal'
 [params]
     readMore = "Read More"
     description = "Projects by Karl"
+    vercelAnalytics = true
 
    [params.Logo]
 	logoText = "Karl Muller"
