@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = 'en-us'
-title = "Karl Muller's Projects"
+title = "Karl Muller"
 theme = 'terminal'
 
 [params]
