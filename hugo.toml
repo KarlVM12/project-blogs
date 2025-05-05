@@ -3,6 +3,12 @@ languageCode = 'en-us'
 title = "Karl Muller"
 theme = 'terminal'
 
+[params.vercel_analytics]
+enable = true
+
+[params.vercel_speed_insights]
+enable = true
+
 [params]
     readMore = "Read More"
     description = "Projects by Karl"
