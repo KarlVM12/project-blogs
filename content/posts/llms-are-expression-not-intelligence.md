@@ -29,10 +29,14 @@ To round this out, language does not equate to understanding, and is far from in
 
 ## References
 
-[1]{#ref1} Marcus, Gary, and Ernest Davis. GPT-3, Bloviator: OpenAI’s language generator has no idea what it’s talking about. MIT Technology Review, 2020.
+### [1] GPT-3, Bloviator {#ref1}
+[1] Marcus, Gary, and Ernest Davis. GPT-3, Bloviator: OpenAI’s language generator has no idea what it’s talking about. MIT Technology Review, 2020.
 https://www.technologyreview.com/2020/08/22/1007539/gpt-3-openai-language-generator-artificial-intelligence-ai-opinion/
-[2]{#ref2} Searle, John. "Minds, brains, and programs." Behavioral and Brain Sciences 3.3 (1980): 417–457.
+### [2] Minds, Brains, and Programs {#ref2}
+[2] Searle, John. "Minds, brains, and programs." Behavioral and Brain Sciences 3.3 (1980): 417–457.
+### [3] Zero-Shot Reasoners {#ref3}
 [3]{#ref3} Kojima, T., Gu, S. S., Reid, M., Matsuo, Y., & Iwasawa, Y. (2022). *Large Language Models are Zero-Shot Reasoners*. arXiv preprint arXiv:2205.11916. [PDF](https://arxiv.org/pdf/2205.11916)
+### [4] Simple Test-Time Scaling {#ref4}
 [4]{#ref4} Muennighoff, N., Yang, Z., Shi, W., Li, X. L., Fei-Fei, L., Hajishirzi, H., Zettlemoyer, L., Liang, P., Candès, E., & Hashimoto, T. (2025). *s1: Simple test-time scaling*. arXiv preprint arXiv:2501.19393. [PDF](https://arxiv.org/pdf/2501.19393)
 
 
