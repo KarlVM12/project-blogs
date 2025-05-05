@@ -75,5 +75,8 @@
   <link href="{{ .RelPermalink }}" rel="alternate" type="application/json" title="{{ $.Site.Title }}" />
 {{ end }}
 
+<!-- Vercel analytics -->
+<script defer src="https://vercel.analytics/analytics.js"></script>
+
 <!-- Extended head section-->
 {{ partial "extended_head.html" . }}
