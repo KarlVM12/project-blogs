@@ -30,7 +30,7 @@ To round this out, language does not equate to understanding, and is far from in
 ## References
 ###### {#ref1}
 [1] Marcus, Gary, and Ernest Davis. GPT-3, Bloviator: OpenAI’s language generator has no idea what it’s talking about. MIT Technology Review, 2020.
-https://www.technologyreview.com/2020/08/22/1007539/gpt-3-openai-language-generator-artificial-intelligence-ai-opinion/ 
+https://www.technologyreview.com/2020/08/22/1007539/gpt3-openai-language-generator-artificial-intelligence-ai-opinion/ 
 ###### {#ref2}
 [2] Searle, John. "Minds, brains, and programs." Behavioral and Brain Sciences 3.3 (1980): 417–457.
 ###### {#ref3}
