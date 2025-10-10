@@ -1,0 +1,120 @@
+{{ with site.Data.resume }}
+  {{ with .intro }}
+    <section class="resume-section">
+      <div class="posts">
+        <article class="post on-list">
+          <h1 class="post-title">{{ .name }}</h1>
+          <div class="post-meta">
+            {{ with .location }}
+              <span class="post-date">{{ . }}</span>
+            {{ end }}
+            {{ range .contacts }}
+              <span class="post-author">
+                {{- if .url -}}
+                  <a href="{{ .url }}"{{ if strings.HasPrefix .url "http" }} target="_blank" rel="noopener"{{ end }}>{{ .text }}</a>
+                {{- else -}}
+                  {{ .text }}
+                {{- end -}}
+              </span>
+            {{ end }}
+          </div>
+          {{ with .tagline }}
+            <div class="post-content">
+              <p>{{ . }}</p>
+            </div>
+          {{ end }}
+        </article>
+      </div>
+    </section>
+  {{ end }}
+
+  {{ with .experience }}
+    <section class="resume-section">
+      <h2>Professional Experience</h2>
+      <div class="posts">
+        {{ range . }}
+          <article class="post on-list">
+            <h2 class="post-title">{{ .role }}</h2>
+            <div class="post-meta">
+              {{ with .company }}
+                <span class="post-date">{{ . }}</span>
+              {{ end }}
+              {{ if or .location .timeframe }}
+                <span class="post-author">
+                  {{- with .location -}}{{ . }}{{ end }}{{ if and .location .timeframe }} · {{ end }}{{ with .timeframe }}{{ . }}{{ end }}
+                </span>
+              {{ end }}
+            </div>
+            {{ with .links }}
+              <div class="post-links">
+                {{ range . }}
+                  <a href="{{ .url }}"{{ if strings.HasPrefix .url "http" }} target="_blank" rel="noopener"{{ end }} class="post-link">{{ .text }}</a>
+                {{ end }}
+              </div>
+            {{ end }}
+            {{ with .highlights }}
+              <div class="post-content">
+                <ul>
+                  {{ range . }}
+                    <li>{{ . }}</li>
+                  {{ end }}
+                </ul>
+              </div>
+            {{ end }}
+          </article>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+
+  {{ with .projects }}
+    <section class="resume-section">
+      <h2>Projects</h2>
+      <div class="posts">
+        {{ range . }}
+          <article class="post on-list">
+            <h2 class="post-title">{{ .name }}</h2>
+            <div class="post-meta">
+              {{ with .timeframe }}
+                <span class="post-date">{{ . }}</span>
+              {{ end }}
+              {{ with .stack }}
+                <span class="post-author">{{ . }}</span>
+              {{ end }}
+            </div>
+            {{ with .summary }}
+              <div class="post-content">
+                <p>{{ . }}</p>
+              </div>
+            {{ end }}
+          </article>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+
+  {{ with .education }}
+    <section class="resume-section">
+      <h2>Education</h2>
+      <div class="posts">
+        {{ range . }}
+          <article class="post on-list">
+            <h2 class="post-title">{{ .school }}</h2>
+            <div class="post-content">
+              {{ with .degree }}
+                <p><strong>{{ . }}</strong></p>
+              {{ end }}
+              {{ with .details }}
+                <p>{{ . }}</p>
+              {{ end }}
+              {{ with .location }}
+                <p>{{ . }}</p>
+              {{ end }}
+            </div>
+          </article>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+
+{{ end }}

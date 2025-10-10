@@ -21,4 +21,3 @@ enable = true
  	name = "Home"
  	url = "/"
 	weight = 1
-

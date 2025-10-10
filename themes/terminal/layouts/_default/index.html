@@ -4,6 +4,12 @@
       {{ .Content }}
     </div>
   {{ end }}
+  {{ if .IsHome }}
+    {{ partial "home-resume.html" . }}
+  {{ end }}
+  {{ if .IsHome }}
+    <h2>Commentaries</h2>
+  {{ end }}
   <div class="posts">
     {{ $isntDefault := not (or (eq (trim $.Site.Params.contentTypeName " ") "posts") (eq (trim $.Site.Params.contentTypeName " ") "")) }}
     {{ $contentTypeName := cond $isntDefault (string $.Site.Params.contentTypeName) "posts" }}
