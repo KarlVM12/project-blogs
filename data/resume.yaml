@@ -12,7 +12,7 @@ intro:
       url: "https://github.com/KarlVM12"
 
 experience:
-  - role: "Software Engineer II, Reliability"
+  - role: "Platform Engineer, Reliability & AI"
     company: "Boomi"
     location: "Remote"
     timeframe: "Dec 2024 – Present"
@@ -31,7 +31,7 @@ experience:
     highlights:
       - "Designed and implemented a modular semantic language model that weaves linguistic structures into context understanding and reasoning."
       - "Led research into syntax-aware, meaning-driven architectures to advance LLM interpretability and performance."
-  - role: "Solutions Architect & Machine Learning Engineer"
+  - role: "Solutions Architect & Applied AI/ML Engineer"
     company: "Dev Team 7"
     location: "Remote"
     timeframe: "Aug 2023 – Jan 2025"
