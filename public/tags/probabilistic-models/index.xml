@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Probabilistic-Models on Karl Muller</title>
+    <link>/tags/probabilistic-models/</link>
+    <description>Recent content in Probabilistic-Models on Karl Muller</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 08 Jan 2025 22:50:20 -0500</lastBuildDate><atom:link href="/tags/probabilistic-models/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dynamic Probabilistic Mapping Model</title>
+      <link>/posts/dpmm/</link>
+      <pubDate>Wed, 08 Jan 2025 22:50:20 -0500</pubDate>
+      
+      <guid>/posts/dpmm/</guid>
+      <description>&lt;p&gt;Accurate classification across diverse domains is essential for information decision-making and effective resource allocation. With this, comes the Dynamic Probabilistic Mapping Model (DPMM), a flexible hierachial framework designed for multidomain predictions by analyzing feature-outcome correlations. DPMM employs a two-tiered architecture: a primary model initially categorizes each conclusion separately using one-hot encoded features mapped through probabilistic distributions. To address misclassifications and overlapping characteristics, the framework dynamically merges related classes based on performance metrics derived from confusion matrix analysis, and subsequently deploys specialized subclass models for refined predictions.&lt;/p&gt;</description>
+      <content>&lt;p&gt;Accurate classification across diverse domains is essential for information decision-making and effective resource allocation. With this, comes the Dynamic Probabilistic Mapping Model (DPMM), a flexible hierachial framework designed for multidomain predictions by analyzing feature-outcome correlations. DPMM employs a two-tiered architecture: a primary model initially categorizes each conclusion separately using one-hot encoded features mapped through probabilistic distributions. To address misclassifications and overlapping characteristics, the framework dynamically merges related classes based on performance metrics derived from confusion matrix analysis, and subsequently deploys specialized subclass models for refined predictions.&lt;/p&gt;
+&lt;p&gt;This hierarchial approach enables DPMM to adapt to varying data distributions and feature interactions, enhancing classification accuracy and reliability across multiple application areas such as healthcare, finance, and cybersecurity, allowing for the creation of domain specific AI agents. For instance, in an example healthcare scenario, the primary model achieved an initial accuracy of approximately 76% which can improve to around 87% after merging related classes. Subclass models further refine predictions, significantly boosting accuracy for specific condition groups. These results exemplify DPMM&amp;rsquo;s capability to continuously optimize its structure based on input data and outcome distributions. By integrating probabilistic feature mappings with dynamic class restructing, DPMM offers a robust and scalable solution for complex multi-class prediction tasks, ensuring higher precision and adaptability in diverse real-world applications.&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,7 +6,39 @@
     <description>Recent content in Home on Karl Muller</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 04 May 2025 17:54:46 -0400</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Dec 2025 21:30:00 -0500</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Grammar Aware Language Models</title>
+      <link>/posts/grammar-aware-language-models/</link>
+      <pubDate>Tue, 16 Dec 2025 21:30:00 -0500</pubDate>
+      
+      <guid>/posts/grammar-aware-language-models/</guid>
+      <description>&lt;p&gt;Large language models (LLMs) demonstrate emergent and strong grammatical fluency, but can still violate the constraints of a language&amp;rsquo;s grammar such as in code generation or formal reasoning. We investigate whether an explicit, lightweight grammar prior can improve syntactic correctness without modifying the weights of the model itself.&lt;/p&gt;
+&lt;p&gt;We propose a grammar aware scoring framework that augments an LLM&amp;rsquo;s sentence log-likelihood with a part of speech (POS) bigram priors model trained on tagged text. The resulting model acts similar to a product of experts, combining the semantic likelihood of a sentence from the LLM with the grammar structural plausibility of that sentence from the POS model.&lt;/p&gt;</description>
+      <content>&lt;p&gt;Large language models (LLMs) demonstrate emergent and strong grammatical fluency, but can still violate the constraints of a language&amp;rsquo;s grammar such as in code generation or formal reasoning. We investigate whether an explicit, lightweight grammar prior can improve syntactic correctness without modifying the weights of the model itself.&lt;/p&gt;
+&lt;p&gt;We propose a grammar aware scoring framework that augments an LLM&amp;rsquo;s sentence log-likelihood with a part of speech (POS) bigram priors model trained on tagged text. The resulting model acts similar to a product of experts, combining the semantic likelihood of a sentence from the LLM with the grammar structural plausibility of that sentence from the POS model.&lt;/p&gt;
+&lt;p&gt;We evaluate this approach on the BLiMP benchmark of minimal grammatical pairs. Our results show that POS based priors consistently improve performance on several syntactic structures found in formal language (e.g. subject-verb agreement, intransitives, irregular past participles) while occasionally degrading complex structures (e.g. negative polarity items, principle A). Overall, we find that grammar priors are most effective when applied selectively, highlighting both the promise and limitation of a simple, shallow grammatical bias.&lt;/p&gt;
+&lt;h2 id=&#34;key-findings&#34;&gt;Key Findings&lt;/h2&gt;
+&lt;p&gt;Our experiments revealed several important insights:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Local Dependencies&lt;/strong&gt;: POS bigram priors significantly improved performance on syntactic structures governed by local regularities, including subject-verb agreement (+2.3%), wh-movement (+5.9%), and irregular past participle verbs (+6.8%).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Hierarchical Limitations&lt;/strong&gt;: The approach degraded performance on constructions requiring hierarchical or semantic understanding, such as Principle A binding (-7.0%) and negative polarity item licensing (-3.9%).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Selective Application&lt;/strong&gt;: A single global grammar weight applied uniformly across all syntactic structures proved suboptimal, suggesting the need for adaptive, context-aware grammar priors.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;implications&#34;&gt;Implications&lt;/h2&gt;
+&lt;p&gt;This work demonstrates that even simple grammatical abstractions can complement large language models when applied selectively. The product-of-experts framework offers a flexible alternative to hard grammar-constrained decoding, preserving the original token space while avoiding model retraining. However, the limitations of POS bigram models highlight the need for richer syntactic representations, such as dependency-aware grammar priors.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Read the full paper:&lt;/strong&gt; &lt;a href=&#34;https://ts8labs.com/research&#34;&gt;https://ts8labs.com/research&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Research conducted at Cornell Tech&lt;/em&gt;&lt;/p&gt;
+</content>
+    </item>
+    
     <item>
       <title>Language &amp; LLMs = Expression, not Intelligence</title>
       <link>/posts/llms-are-expression-not-intelligence/</link>

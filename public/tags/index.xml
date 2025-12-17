@@ -5,6 +5,157 @@
     <link>/tags/</link>
     <description>Recent content in Tags on Karl Muller</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Tue, 16 Dec 2025 21:30:00 -0500</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Language-Models</title>
+      <link>/tags/language-models/</link>
+      <pubDate>Tue, 16 Dec 2025 21:30:00 -0500</pubDate>
+      
+      <guid>/tags/language-models/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Nlp</title>
+      <link>/tags/nlp/</link>
+      <pubDate>Tue, 16 Dec 2025 21:30:00 -0500</pubDate>
+      
+      <guid>/tags/nlp/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Research</title>
+      <link>/tags/research/</link>
+      <pubDate>Tue, 16 Dec 2025 21:30:00 -0500</pubDate>
+      
+      <guid>/tags/research/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Ai</title>
+      <link>/tags/ai/</link>
+      <pubDate>Sun, 04 May 2025 17:54:46 -0400</pubDate>
+      
+      <guid>/tags/ai/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Language</title>
+      <link>/tags/language/</link>
+      <pubDate>Sun, 04 May 2025 17:54:46 -0400</pubDate>
+      
+      <guid>/tags/language/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Llm</title>
+      <link>/tags/llm/</link>
+      <pubDate>Sun, 04 May 2025 17:54:46 -0400</pubDate>
+      
+      <guid>/tags/llm/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Philosophy</title>
+      <link>/tags/philosophy/</link>
+      <pubDate>Sun, 04 May 2025 17:54:46 -0400</pubDate>
+      
+      <guid>/tags/philosophy/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Configuration</title>
+      <link>/tags/configuration/</link>
+      <pubDate>Sat, 18 Jan 2025 23:58:58 -0500</pubDate>
+      
+      <guid>/tags/configuration/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Dev-Tools</title>
+      <link>/tags/dev-tools/</link>
+      <pubDate>Sat, 18 Jan 2025 23:58:58 -0500</pubDate>
+      
+      <guid>/tags/dev-tools/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Ghostty</title>
+      <link>/tags/ghostty/</link>
+      <pubDate>Sat, 18 Jan 2025 23:58:58 -0500</pubDate>
+      
+      <guid>/tags/ghostty/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Neovim</title>
+      <link>/tags/neovim/</link>
+      <pubDate>Sat, 18 Jan 2025 23:58:58 -0500</pubDate>
+      
+      <guid>/tags/neovim/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Terminal</title>
+      <link>/tags/terminal/</link>
+      <pubDate>Sat, 18 Jan 2025 23:58:58 -0500</pubDate>
+      
+      <guid>/tags/terminal/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Classification</title>
+      <link>/tags/classification/</link>
+      <pubDate>Wed, 08 Jan 2025 22:50:20 -0500</pubDate>
+      
+      <guid>/tags/classification/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Machine-Learning</title>
+      <link>/tags/machine-learning/</link>
+      <pubDate>Wed, 08 Jan 2025 22:50:20 -0500</pubDate>
+      
+      <guid>/tags/machine-learning/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Probabilistic-Models</title>
+      <link>/tags/probabilistic-models/</link>
+      <pubDate>Wed, 08 Jan 2025 22:50:20 -0500</pubDate>
+      
+      <guid>/tags/probabilistic-models/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
   </channel>
 </rss>

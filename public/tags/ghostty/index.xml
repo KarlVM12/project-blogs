@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ghostty on Karl Muller</title>
+    <link>/tags/ghostty/</link>
+    <description>Recent content in Ghostty on Karl Muller</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 18 Jan 2025 23:58:58 -0500</lastBuildDate><atom:link href="/tags/ghostty/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ghostty Nvim Config</title>
+      <link>/posts/ghostty-nvim-config/</link>
+      <pubDate>Sat, 18 Jan 2025 23:58:58 -0500</pubDate>
+      
+      <guid>/posts/ghostty-nvim-config/</guid>
+      <description>&lt;p&gt;The Primeagen inspired me to start looking into better developer tools and actually start using nvim. Now I have adapted to ghostty and nvim and have come to really like it. Therefore, just want to document my config for when I switch devices or if anyone else actually happens to be interested. I could repeat myself here, but all you need is in my github repo &lt;a href=&#34;https://github.com/KarlVM12/ghostty-nvim-config&#34;&gt;ghostty-nvim-config&lt;/a&gt;.&lt;/p&gt;</description>
+      <content>&lt;p&gt;The Primeagen inspired me to start looking into better developer tools and actually start using nvim. Now I have adapted to ghostty and nvim and have come to really like it. Therefore, just want to document my config for when I switch devices or if anyone else actually happens to be interested. I could repeat myself here, but all you need is in my github repo &lt;a href=&#34;https://github.com/KarlVM12/ghostty-nvim-config&#34;&gt;ghostty-nvim-config&lt;/a&gt;.&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

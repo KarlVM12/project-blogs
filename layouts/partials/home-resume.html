@@ -21,6 +21,11 @@
           {{ with .tagline }}
             <div class="post-content">
               <p>{{ . }}</p>
+              {{ $posts := where site.RegularPages "Type" "posts" }}
+              {{ if $posts }}
+                {{ $latestPost := index (first 1 ($posts.ByDate.Reverse)) 0 }}
+                <p><strong>Latest Post:</strong> <a href="{{ $latestPost.RelPermalink }}">{{ $latestPost.Title }}</a></p>
+              {{ end }}
             </div>
           {{ end }}
         </article>
