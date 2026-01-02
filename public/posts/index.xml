@@ -6,7 +6,33 @@
     <description>Recent content in Posts on Karl Muller</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 16 Dec 2025 21:30:00 -0500</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 02 Jan 2026 17:18:11 -0500</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dimensions: A Terminal Tab Manager</title>
+      <link>/posts/dimensions/</link>
+      <pubDate>Fri, 02 Jan 2026 17:18:11 -0500</pubDate>
+      
+      <guid>/posts/dimensions/</guid>
+      <description>&lt;p&gt;I built Dimensions because I kept losing momentum and navigability when working on multiple projects at once. Each project needs it own mix of tabs and switching between them with multiple projects starts to become a pain. Especially with so many new AI CLI tools alongside your running servers and editor, my terminal started to become a juggling act. Dimensions wraps tmux with a fast, visual TUI that keeps my workflows organized as named dimensions so you can move between projects and contexts much easier.&lt;/p&gt;</description>
+      <content>&lt;p&gt;I built Dimensions because I kept losing momentum and navigability when working on multiple projects at once. Each project needs it own mix of tabs and switching between them with multiple projects starts to become a pain. Especially with so many new AI CLI tools alongside your running servers and editor, my terminal started to become a juggling act. Dimensions wraps tmux with a fast, visual TUI that keeps my workflows organized as named dimensions so you can move between projects and contexts much easier.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/KarlVM12/Dimensions/master/demo.gif&#34; alt=&#34;Dimensions Demo&#34;&gt;&lt;/p&gt;
+&lt;p&gt;What it does well:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Group tabs into named dimensions and switch contexts instantly&lt;/li&gt;
+&lt;li&gt;Keep processes alive in the background when you swap dimensions&lt;/li&gt;
+&lt;li&gt;Fuzzy search across dimensions and tabs for quick navigation&lt;/li&gt;
+&lt;li&gt;Persist dimension names, tabs, and commands to disk&lt;/li&gt;
+&lt;li&gt;Launch as a tmux popup with a single keybind&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you want to try it, the project lives here: &lt;a href=&#34;https://github.com/KarlVM12/Dimensions&#34;&gt;Dimensions on GitHub&lt;/a&gt;. It is written in Rust with ratatui and leans on tmux for session management.&lt;/p&gt;
+&lt;p&gt;Quick install:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;curl -fsSL https://raw.githubusercontent.com/KarlVM12/Dimensions/master/install.sh | sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And if you want the popup workflow, add this to &lt;code&gt;~/.tmux.conf&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;bind -n C-g display-popup -E -w 80% -h 80% &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;dimensions&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you do give it a shot, I would love to hear what you want to see next.&lt;/p&gt;
+</content>
+    </item>
+    
     <item>
       <title>Grammar Aware Language Models</title>
       <link>/posts/grammar-aware-language-models/</link>

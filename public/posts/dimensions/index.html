@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
   
-    <title>Terminal :: Karl Muller</title>
+    <title>Dimensions: A Terminal Tab Manager :: Karl Muller</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="" />
-<meta name="keywords" content="" />
+<meta name="description" content="An interactive terminal tool that keeps tmux tabs organized into focused workspaces." />
+<meta name="keywords" content="Dimensions, tmux, TUI, terminal, Rust" />
 
   <meta name="robots" content="noodp" />
 
-<link rel="canonical" href="/tags/terminal/" />
+<link rel="canonical" href="/posts/dimensions/" />
 
 
 
@@ -74,22 +74,24 @@
 
 
 <meta property="og:locale" content="en" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Terminal">
-<meta property="og:description" content="" />
-<meta property="og:url" content="/tags/terminal/" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Dimensions: A Terminal Tab Manager">
+<meta property="og:description" content="An interactive terminal tool that keeps tmux tabs organized into focused workspaces." />
+<meta property="og:url" content="/posts/dimensions/" />
 <meta property="og:site_name" content="Karl Muller" />
 
-  <meta property="og:image" content="/og-image.png">
+  
+  
+  <meta property="og:image" content="/">
 
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="627">
 
 
+  <meta property="article:published_time" content="2026-01-02 17:18:11 -0500 EST" />
 
 
 
-  <link href="/tags/terminal/index.xml" rel="alternate" type="application/rss+xml" title="Karl Muller" />
 
 
 
@@ -178,93 +180,57 @@
 
   <div class="content">
     
-  <h1>Posts for: #Terminal</h1>
+<article class="post">
+  <h1 class="post-title">
+    <a href="/posts/dimensions/">Dimensions: A Terminal Tab Manager</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2026-01-02</time><span class="post-author">Karl Muller</span></div>
+
   
-  <div class="posts">
-    
-      <article class="post on-list">
-        <h1 class="post-title">
-          <a href="/posts/dimensions/">Dimensions: A Terminal Tab Manager</a>
-        </h1>
-        <div class="post-meta"><time class="post-date">2026-01-02</time><span class="post-author">Karl Muller</span></div>
-
-        
-          <span class="post-tags">
-            
-            #<a href="/tags/dev-tools/">dev-tools</a>&nbsp;
-            
-            #<a href="/tags/terminal/">terminal</a>&nbsp;
-            
-            #<a href="/tags/configuration/">configuration</a>&nbsp;
-            
-            #<a href="/tags/tmux/">tmux</a>&nbsp;
-            
-          </span>
-        
-
-        
+    <span class="post-tags">
+      
+      #<a href="/tags/dev-tools/">dev-tools</a>&nbsp;
+      
+      #<a href="/tags/terminal/">terminal</a>&nbsp;
+      
+      #<a href="/tags/configuration/">configuration</a>&nbsp;
+      
+      #<a href="/tags/tmux/">tmux</a>&nbsp;
+      
+    </span>
+  
+  
 
 
-        <div class="post-content">
-          
-            <p>An interactive terminal tool that keeps tmux tabs organized into focused workspaces.</p>
-          
-        </div>
+  
 
-        
-          <div>
-            <a class="read-more button inline" href="/posts/dimensions/">Read More</a>
-          </div>
-        
-      </article>
-    
-      <article class="post on-list">
-        <h1 class="post-title">
-          <a href="/posts/ghostty-nvim-config/">Ghostty Nvim Config</a>
-        </h1>
-        <div class="post-meta"><time class="post-date">2025-01-18</time><span class="post-author">Karl Muller</span></div>
+  <div class="post-content"><div>
+        <p>I built Dimensions because I kept losing momentum and navigability when working on multiple projects at once. Each project needs it own mix of tabs and switching between them with multiple projects starts to become a pain. Especially with so many new AI CLI tools alongside your running servers and editor, my terminal started to become a juggling act. Dimensions wraps tmux with a fast, visual TUI that keeps my workflows organized as named dimensions so you can move between projects and contexts much easier.</p>
+<p><img src="https://raw.githubusercontent.com/KarlVM12/Dimensions/master/demo.gif" alt="Dimensions Demo"></p>
+<p>What it does well:</p>
+<ul>
+<li>Group tabs into named dimensions and switch contexts instantly</li>
+<li>Keep processes alive in the background when you swap dimensions</li>
+<li>Fuzzy search across dimensions and tabs for quick navigation</li>
+<li>Persist dimension names, tabs, and commands to disk</li>
+<li>Launch as a tmux popup with a single keybind</li>
+</ul>
+<p>If you want to try it, the project lives here: <a href="https://github.com/KarlVM12/Dimensions">Dimensions on GitHub</a>. It is written in Rust with ratatui and leans on tmux for session management.</p>
+<p>Quick install:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -fsSL https://raw.githubusercontent.com/KarlVM12/Dimensions/master/install.sh | sh
+</span></span></code></pre></div><p>And if you want the popup workflow, add this to <code>~/.tmux.conf</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>bind -n C-g display-popup -E -w 80% -h 80% <span style="color:#e6db74">&#34;dimensions&#34;</span>
+</span></span></code></pre></div><p>If you do give it a shot, I would love to hear what you want to see next.</p>
 
-        
-          <span class="post-tags">
-            
-            #<a href="/tags/dev-tools/">dev-tools</a>&nbsp;
-            
-            #<a href="/tags/terminal/">terminal</a>&nbsp;
-            
-            #<a href="/tags/neovim/">neovim</a>&nbsp;
-            
-            #<a href="/tags/configuration/">configuration</a>&nbsp;
-            
-            #<a href="/tags/ghostty/">ghostty</a>&nbsp;
-            
-          </span>
-        
+      </div></div>
 
-        
+  
 
-
-        <div class="post-content">
-          
-            <p>My simple setup for ghostty and nvim</p>
-          
-        </div>
-
-        
-          <div>
-            <a class="read-more button inline" href="/posts/ghostty-nvim-config/">Read More</a>
-          </div>
-        
-      </article>
+  
     
 
-    <div class="pagination">
-  <div class="pagination__buttons">
-    
-    
-  </div>
-</div>
-
-  </div>
+  
+</article>
 
   </div>
 

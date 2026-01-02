@@ -6,7 +6,47 @@
     <description>Recent content in Tags on Karl Muller</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 16 Dec 2025 21:30:00 -0500</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 02 Jan 2026 17:18:11 -0500</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Configuration</title>
+      <link>/tags/configuration/</link>
+      <pubDate>Fri, 02 Jan 2026 17:18:11 -0500</pubDate>
+      
+      <guid>/tags/configuration/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Dev-Tools</title>
+      <link>/tags/dev-tools/</link>
+      <pubDate>Fri, 02 Jan 2026 17:18:11 -0500</pubDate>
+      
+      <guid>/tags/dev-tools/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Terminal</title>
+      <link>/tags/terminal/</link>
+      <pubDate>Fri, 02 Jan 2026 17:18:11 -0500</pubDate>
+      
+      <guid>/tags/terminal/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Tmux</title>
+      <link>/tags/tmux/</link>
+      <pubDate>Fri, 02 Jan 2026 17:18:11 -0500</pubDate>
+      
+      <guid>/tags/tmux/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
     <item>
       <title>Language-Models</title>
       <link>/tags/language-models/</link>
@@ -78,26 +118,6 @@
     </item>
     
     <item>
-      <title>Configuration</title>
-      <link>/tags/configuration/</link>
-      <pubDate>Sat, 18 Jan 2025 23:58:58 -0500</pubDate>
-      
-      <guid>/tags/configuration/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>Dev-Tools</title>
-      <link>/tags/dev-tools/</link>
-      <pubDate>Sat, 18 Jan 2025 23:58:58 -0500</pubDate>
-      
-      <guid>/tags/dev-tools/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
       <title>Ghostty</title>
       <link>/tags/ghostty/</link>
       <pubDate>Sat, 18 Jan 2025 23:58:58 -0500</pubDate>
@@ -113,16 +133,6 @@
       <pubDate>Sat, 18 Jan 2025 23:58:58 -0500</pubDate>
       
       <guid>/tags/neovim/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>Terminal</title>
-      <link>/tags/terminal/</link>
-      <pubDate>Sat, 18 Jan 2025 23:58:58 -0500</pubDate>
-      
-      <guid>/tags/terminal/</guid>
       <description></description>
       <content></content>
     </item>
