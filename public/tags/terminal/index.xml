@@ -15,6 +15,7 @@
       <guid>/posts/dimensions/</guid>
       <description>&lt;p&gt;I built Dimensions because I kept losing momentum and navigability when working on multiple projects at once. Each project needs it own mix of tabs and switching between them with multiple projects starts to become a pain. Especially with so many new AI CLI tools alongside your running servers and editor, my terminal started to become a juggling act. Dimensions wraps tmux with a fast, visual TUI that keeps my workflows organized as named dimensions so you can move between projects and contexts much easier.&lt;/p&gt;</description>
       <content>&lt;p&gt;I built Dimensions because I kept losing momentum and navigability when working on multiple projects at once. Each project needs it own mix of tabs and switching between them with multiple projects starts to become a pain. Especially with so many new AI CLI tools alongside your running servers and editor, my terminal started to become a juggling act. Dimensions wraps tmux with a fast, visual TUI that keeps my workflows organized as named dimensions so you can move between projects and contexts much easier.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/KarlVM12/Dimensions&#34;&gt;Dimensions on GitHub ↗&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://github.com/user-attachments/assets/1e1b98ad-1e43-4156-9767-d1b2b212e1cf&#34; alt=&#34;Dimensions Screenshot&#34;&gt;&lt;/p&gt;
 &lt;p&gt;What it does well:&lt;/p&gt;
 &lt;ul&gt;
