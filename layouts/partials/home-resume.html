@@ -95,13 +95,17 @@
                 {{ if or (strings.Contains . "GitHub:") (strings.Contains . "https://") }}
                   {{ $parts := split . "GitHub:" }}
                   {{ if eq (len $parts) 2 }}
-                    <p>{{ index $parts 0 | strings.TrimRight " " }}</p>
-                    <p><a href="{{ index $parts 1 | strings.TrimSpace }}" target="_blank" rel="noopener">{{ index $parts 1 | strings.TrimSpace }}</a></p>
+                    {{ $desc := index $parts 0 }}
+                    {{ $url := index $parts 1 }}
+                    <p>{{ trim $desc " " }}</p>
+                    <p><a href="{{ trim $url " " }}" target="_blank" rel="noopener">{{ trim $url " " }}</a></p>
                   {{ else }}
                     {{ $parts := split . "https://" }}
                     {{ if ge (len $parts) 2 }}
-                      <p>{{ index $parts 0 | strings.TrimRight " " }}</p>
-                      <p><a href="https://{{ index $parts 1 | strings.TrimSpace }}" target="_blank" rel="noopener">https://{{ index $parts 1 | strings.TrimSpace }}</a></p>
+                      {{ $desc := index $parts 0 }}
+                      {{ $url := index $parts 1 }}
+                      <p>{{ trim $desc " " }}</p>
+                      <p><a href="https://{{ trim $url " " }}" target="_blank" rel="noopener">https://{{ trim $url " " }}</a></p>
                     {{ else }}
                       <p>{{ . }}</p>
                     {{ end }}
