@@ -6,7 +6,33 @@
     <description>Recent content in Language on Karl Muller</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 04 May 2025 17:54:46 -0400</lastBuildDate><atom:link href="/tags/language/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Jan 2026 22:00:00 -0500</lastBuildDate><atom:link href="/tags/language/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Greater Expression does not Lead to Greater Quality</title>
+      <link>/posts/greater-expression-not-greater-quality/</link>
+      <pubDate>Tue, 20 Jan 2026 22:00:00 -0500</pubDate>
+      
+      <guid>/posts/greater-expression-not-greater-quality/</guid>
+      <description>&lt;p&gt;Last year, I wrote a small piece on how &lt;a href=&#34;/posts/llms-are-expression-not-intelligence/&#34;&gt;LLMs = Expression, not Intelligence&lt;/a&gt;. I feel like now is a more important time than ever to revisit this thought. Not that it was wrong, precisely the opposite, but because that ability of expression and creation through these models has only continued to increase, have put even more amazing tools in the hands of so many people, but we have yet to see the so called proof of better engineered systems. In fact, most likely the opposite has occurred.&lt;/p&gt;</description>
+      <content>&lt;p&gt;Last year, I wrote a small piece on how &lt;a href=&#34;/posts/llms-are-expression-not-intelligence/&#34;&gt;LLMs = Expression, not Intelligence&lt;/a&gt;. I feel like now is a more important time than ever to revisit this thought. Not that it was wrong, precisely the opposite, but because that ability of expression and creation through these models has only continued to increase, have put even more amazing tools in the hands of so many people, but we have yet to see the so called proof of better engineered systems. In fact, most likely the opposite has occurred.&lt;/p&gt;
+&lt;p&gt;LLMs have yet to make an impact purely because the force multiplier aspect is only a force multiplier for those that use it correctly. For many, it still comes off as &amp;ldquo;slop&amp;rdquo; or slowing other people down. This has become especially evident in an age where so many people have stopped asking questions, or at least the right ones. Those who leverage LLMs correctly are those who are naturally curious, who are asking questions and actually wanting to learn. If LLMs to one are simply just a &amp;ldquo;do this task for me&amp;rdquo;, then you are never going to learn anything, and the LLM is probably going to give you an undesirable output, leading to your frustration.&lt;/p&gt;
+&lt;p&gt;This is why with how explosive tools like Claude Code have become, we don&amp;rsquo;t see an explosion of better content. And this has been proven throughout history as well. Every time we have reached a milestone in greater expression, it has often times lead to the fear of worse quality, known as the &amp;ldquo;media panic cycle&amp;rdquo;, commonly seen recently with the spread of misinformation and even going back to &lt;a href=&#34;https://newlearningonline.com/literacies/chapter-1/socrates-on-the-forgetfulness-that-comes-with-writing&#34;&gt;Socrates&amp;rsquo; fear of forgetfulness from written language&lt;/a&gt; around 350 BCE.&lt;/p&gt;
+&lt;p&gt;Today, we would be in the &lt;strong&gt;&lt;em&gt;AI panic cycle&lt;/em&gt;&lt;/strong&gt;, where each new model sparks some fear of jobs being replaced coupled with one&amp;rsquo;s degradation of their abilities (for those that use them improperly), even though these models should be increasing one&amp;rsquo;s expression and creativity.&lt;/p&gt;
+&lt;p&gt;It often reminds me of the quote from Dijkstra&amp;rsquo;s &lt;a href=&#34;https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html&#34;&gt;&amp;ldquo;On the foolishness of &amp;rsquo;natural language programming&amp;rsquo;&amp;rdquo;&lt;/a&gt; from 1978:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;although changing to communication between machine and man conducted in the latter&amp;rsquo;s native tongue would greatly increase the machine&amp;rsquo;s burden, we have to challenge the assumption that this would simplify man&amp;rsquo;s life&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Even though Dijkstra wrote this in 1978, it precisely defines the current state of natural language programming. Language Models have to compute an enormous amount of work and energy in order to utilize them via natural language. It gives us the ability to greatly express ourselves, but we have stopped learning and asking questions.&lt;/p&gt;
+&lt;p&gt;All these tools have only proven more so that coding was never truly the skill, that the skill is in the engineer themselves, and the lengths they will go to improve themselves. The ones unaffected by the current AI panic cycle use these tools wisely, to be the advanced assistant for greater self expression they are supposed to be, not to replace their own effort, motivation, or thought.&lt;/p&gt;
+&lt;p&gt;When the industry starts to preach this more than the &amp;ldquo;replace all developers&amp;rdquo; ideology, that is when we will truly start to see the benefits.&lt;/p&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Dijkstra, E. W. (1978). &lt;a href=&#34;https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html&#34;&gt;On the foolishness of &amp;ldquo;natural language programming&amp;rdquo;&lt;/a&gt;. EWD667.&lt;/li&gt;
+&lt;li&gt;Socrates on writing and memory (~350 BCE): &lt;a href=&#34;https://newlearningonline.com/literacies/chapter-1/socrates-on-the-forgetfulness-that-comes-with-writing&#34;&gt;The forgetfulness that comes with writing&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
     <item>
       <title>Language &amp; LLMs = Expression, not Intelligence</title>
       <link>/posts/llms-are-expression-not-intelligence/</link>
