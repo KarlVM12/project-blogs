@@ -26,6 +26,13 @@
                 {{ $latestPost := index (first 1 ($posts.ByDate.Reverse)) 0 }}
                 <p><strong>Latest Post:</strong> <a href="{{ $latestPost.RelPermalink }}">{{ $latestPost.Title }}</a></p>
               {{ end }}
+              <p style="margin-top: 1.5em;">
+                <!-- <strong>Quick Links:</strong> -->
+                <a href="#commentaries">Commentaries</a> ·
+                <a href="#projects">Projects</a> ·
+                <a href="#education">Education</a> ·
+                <a href="#professional-experience">Professional Experience</a>
+              </p>
             </div>
           {{ end }}
         </article>
@@ -33,8 +40,122 @@
     </section>
   {{ end }}
 
+  {{ $posts := where site.RegularPages "Type" "posts" }}
+  {{ $posts := where $posts "Draft" false }}
+  {{ if $posts }}
+    <section class="resume-section" id="commentaries">
+      <h2>Commentaries</h2>
+      <div class="posts">
+        {{ range first 3 ($posts.ByDate.Reverse) }}
+          <article class="post on-list">
+            <h2 class="post-title">
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </h2>
+            <div class="post-meta">
+              {{ with .Date }}
+                <span class="post-date">{{ .Format "Jan 2, 2006" }}</span>
+              {{ end }}
+            </div>
+            {{ with .Description }}
+              <div class="post-content">
+                <p>{{ . }}</p>
+              </div>
+            {{ end }}
+            {{ if not .Params.showFullContent }}
+              <div>
+                <a class="read-more button inline" href="{{ .RelPermalink }}">Read more</a>
+              </div>
+            {{ end }}
+          </article>
+        {{ end }}
+      </div>
+      <div style="text-align: center; margin-top: 2em;">
+        <a class="read-more button" href="/posts/">View All Commentaries</a>
+      </div>
+    </section>
+  {{ end }}
+
+  {{ with .projects }}
+    <section class="resume-section" id="projects">
+      <h2>Projects</h2>
+      <div class="posts">
+        {{ range . }}
+          <article class="post on-list">
+            <h2 class="post-title">{{ .name }}</h2>
+            <div class="post-meta">
+              {{ with .timeframe }}
+                <span class="post-date">{{ . }}</span>
+              {{ end }}
+              {{ with .stack }}
+                <span class="post-author">{{ . }}</span>
+              {{ end }}
+            </div>
+            {{ with .summary }}
+              <div class="post-content">
+                {{ if or (strings.Contains . "GitHub:") (strings.Contains . "https://") }}
+                  {{ $parts := split . "GitHub:" }}
+                  {{ if eq (len $parts) 2 }}
+                    <p>{{ index $parts 0 | strings.TrimRight " " }}</p>
+                    <p><a href="{{ index $parts 1 | strings.TrimSpace }}" target="_blank" rel="noopener">{{ index $parts 1 | strings.TrimSpace }}</a></p>
+                  {{ else }}
+                    {{ $parts := split . "https://" }}
+                    {{ if ge (len $parts) 2 }}
+                      <p>{{ index $parts 0 | strings.TrimRight " " }}</p>
+                      <p><a href="https://{{ index $parts 1 | strings.TrimSpace }}" target="_blank" rel="noopener">https://{{ index $parts 1 | strings.TrimSpace }}</a></p>
+                    {{ else }}
+                      <p>{{ . }}</p>
+                    {{ end }}
+                  {{ end }}
+                {{ else }}
+                  <p>{{ . }}</p>
+                {{ end }}
+              </div>
+            {{ end }}
+          </article>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+
+  {{ with .education }}
+    <section class="resume-section" id="education">
+      <h2>Education</h2>
+      <div class="posts">
+        {{ range . }}
+          <article class="post on-list">
+            <h2 class="post-title">{{ .school }}</h2>
+            <div class="post-content">
+              {{ with .degree }}
+                <p><strong>{{ . }}</strong></p>
+              {{ end }}
+              {{ with .details }}
+                {{ if strings.Contains . "Focus:" }}
+                  {{ $text := . }}
+                  {{ $text = replace $text "Focus: " "Focus in " }}
+                  {{ $text = replace $text " · Relevant Coursework: " "|Relevant Coursework: " }}
+                  {{ $text = replace $text " · Merit" "|Merit" }}
+                  {{ $parts := split $text "|" }}
+                  {{ range $parts }}
+                    {{ if ne . "" }}
+                      <p>{{ . }}</p>
+                    {{ end }}
+                  {{ end }}
+                {{ else }}
+                  <p>{{ . }}</p>
+                {{ end }}
+              {{ end }}
+              {{ with .location }}
+                <p>{{ . }}</p>
+              {{ end }}
+            </div>
+          </article>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+
   {{ with .experience }}
-    <section class="resume-section">
+    <section class="resume-section" id="professional-experience">
       <h2>Professional Experience</h2>
       <div class="posts">
         {{ range . }}
@@ -66,56 +187,6 @@
                 </ul>
               </div>
             {{ end }}
-          </article>
-        {{ end }}
-      </div>
-    </section>
-  {{ end }}
-
-  {{ with .projects }}
-    <section class="resume-section">
-      <h2>Projects</h2>
-      <div class="posts">
-        {{ range . }}
-          <article class="post on-list">
-            <h2 class="post-title">{{ .name }}</h2>
-            <div class="post-meta">
-              {{ with .timeframe }}
-                <span class="post-date">{{ . }}</span>
-              {{ end }}
-              {{ with .stack }}
-                <span class="post-author">{{ . }}</span>
-              {{ end }}
-            </div>
-            {{ with .summary }}
-              <div class="post-content">
-                <p>{{ . }}</p>
-              </div>
-            {{ end }}
-          </article>
-        {{ end }}
-      </div>
-    </section>
-  {{ end }}
-
-  {{ with .education }}
-    <section class="resume-section">
-      <h2>Education</h2>
-      <div class="posts">
-        {{ range . }}
-          <article class="post on-list">
-            <h2 class="post-title">{{ .school }}</h2>
-            <div class="post-content">
-              {{ with .degree }}
-                <p><strong>{{ . }}</strong></p>
-              {{ end }}
-              {{ with .details }}
-                <p>{{ . }}</p>
-              {{ end }}
-              {{ with .location }}
-                <p>{{ . }}</p>
-              {{ end }}
-            </div>
           </article>
         {{ end }}
       </div>

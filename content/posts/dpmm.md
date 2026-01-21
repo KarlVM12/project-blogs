@@ -10,7 +10,7 @@ description = "Flexible Hierarchical Model for Multidomain Prediction and Featur
 showFullContent = false
 readingTime = false
 hideComments = false
-draft = false
+draft = true
 +++
 
 Accurate classification across diverse domains is essential for information decision-making and effective resource allocation. With this, comes the Dynamic Probabilistic Mapping Model (DPMM), a flexible hierachial framework designed for multidomain predictions by analyzing feature-outcome correlations. DPMM employs a two-tiered architecture: a primary model initially categorizes each conclusion separately using one-hot encoded features mapped through probabilistic distributions. To address misclassifications and overlapping characteristics, the framework dynamically merges related classes based on performance metrics derived from confusion matrix analysis, and subsequently deploys specialized subclass models for refined predictions.

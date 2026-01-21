@@ -1,0 +1,10 @@
+{{ define "main" }}
+  {{ if .Content }}
+    <div class="index-content {{ if .Params.framed -}}framed{{- end -}}">
+      {{ .Content }}
+    </div>
+  {{ end }}
+  {{ if .IsHome }}
+    {{ partial "home-resume.html" . }}
+  {{ end }}
+{{ end }}
