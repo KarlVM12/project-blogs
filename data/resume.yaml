@@ -12,7 +12,7 @@ intro:
       url: "https://github.com/KarlVM12"
 
 experience:
-  - role: "Platform Engineer, Reliability & AI"
+  - role: "Senior Platform Engineer, Reliability & AI"
     company: "Boomi"
     location: "Remote"
     timeframe: "Dec 2024 – Present"
@@ -34,8 +34,12 @@ experience:
   - role: "Graduate Researcher"
     company: "Cornell Tech"
     location: "New York, NY"
-    timeframe: "Oct 2025 – Dec 2025"
+    timeframe: "Oct 2025 – May 2026"
+    links:
+      - text: "arXiv"
+        url: "https://arxiv.org/abs/2605.06482v1"
     highlights:
+      - "Scaling the Queue: Reinforcement Learning for Equitable Call Classification Capacity in NYC Municipal Complaint Systems"
       - "Grammar Aware Language Models: Proposed and designed a grammar aware scoring framework that augments LLM log-likelihoods with part of speech bigram priors, formulated as a product of experts to improve syntactic discrimination and reduce ungrammatical generations."
       - "Supported development of an AI Regulation benchmark evaluating AI system compliance with the EU AI Act, contributing high quality annotations and technical feedback for a research paper targeting top ML venues."
   - role: "Solutions Architect & Applied AI/ML Engineer"
