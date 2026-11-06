@@ -3,6 +3,12 @@
     "env": {
       "HUGO_VERSION": "0.111.3"
     }
-  }
+  },
+  "redirects": [
+    {
+      "source": "/papers/snad-reinforcement-learning.pdf",
+      "destination": "https://www.linkedin.com/in/karlvmuller/",
+      "permanent": false
+    }
+  ]
 }
-
